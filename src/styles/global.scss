@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-family: "Fustat", sans-serif;
+
+  .calculator {
+    width: 300px;
+    height: auto;
+    background-color: #535353;
+
+    .screen {
+      width: 100%;
+      height: auto;
+      padding: 8px 4px 0px 4px;
+
+      p.value {
+        font-size: 50px;
+        text-align: right;
+        line-height: 1;
+        color: white;
+        white-space: nowrap;
+      }
+    }
+
+    .buttons {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+  }
+}

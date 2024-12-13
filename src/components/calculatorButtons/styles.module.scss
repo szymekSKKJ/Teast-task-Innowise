@@ -1,0 +1,15 @@
+.line {
+  --elementsInRow: 4;
+  --gap: 2px;
+
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  flex-wrap: wrap;
+
+  button {
+    width: calc(((100% / var(--elementsInRow)) - ((var(--gap) * (var(--elementsInRow) - 1)) / var(--elementsInRow))));
+  }
+}
